@@ -3,30 +3,57 @@
     <head>
         <title>HTML Advanced Notes</title>
         <meta charset="UTF-8">
+        <style>
+            /* Cascading Style Sheets 
+            1. Selector => says what to change
+            2. Declaration
+                a. Property => What about the element to change
+                b. Value => How to change it*/
+            body{
+                color:rgb(155, 49, 165);
+                background-color:rgb(14, 7, 17);
+                border: dotted 5px #070;
+            }
+            h1{
+                text-align: center
+            }
+            #even{
+                color:coral;
+                text-decoration:underline;
+            }
+            .Lists{
+                width: 50%;
+                background-color:red;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+        </style>
     </head>
     <body>
         <h1>HTML Advanced Notes</h1>
+        <div class="Lists">
         <h3>Lists:</h3>
         <ol type="I">
             <li>Alex</li>
-            <li>Katie</li>
+            <li id="even">Katie</li>
             <li>Andrew</li>
-            <li>Vienna</li>
+            <li id="even">Vienna</li>
         </ol>
         <ul>
             <li><a href="https://www.pickpik.com/orchard-apple-apples-fruit-green-nature-10657" target="_blank">Apple</a></li>
             <li>Orange</li>
-            <li>Peach</li>
+            <li id="even">Peach</li>
             <li>Banana</li>
         </ul>
         <dl>
             <dt>Fall</dt>
-            <dd>Halloween</dd>
+            <dd id="even">Halloween</dd>
             <dd>Thanksgiving</dd>
-            <dt>Winter</dt>
+            <dt id="even">Winter</dt>
             <dd>Christmas</dd>
-            <dd>Hanukkah</dd>
+            <dd id="even">Hanukkah</dd>
             <dd>New Years</dd>
+            </div>
         </dl>
         <h3>Attributes:</h3>
         <div>
